@@ -1,10 +1,10 @@
-# 🎯 Resume Match AI
+# Resume Match AI
 
 An intelligent resume parser, semantic search index, and job matching analyzer application. Upload resumes, paste a Job Description, and view alignment scores, skill classifications, key strengths, and recommendations in an elegant web interface.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi-Format Ingestion:** Extracts and normalizes text from PDF, DOCX, and TXT resume formats.
 - **Dual Similarity Engines:** Computes semantic matching using localized SentenceTransformers (`all-MiniLM-L6-v2`) with a robust fallback to TF-IDF cosine similarity or token overlap matching if deep learning packages are absent.
@@ -15,7 +15,7 @@ An intelligent resume parser, semantic search index, and job matching analyzer a
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 resume-match-ai/
@@ -51,6 +51,7 @@ resume-match-ai/
 Follow these steps to run the application on your local machine:
 
 ### 1. Set Up Your Environment
+
 Ensure Python 3.8+ is installed on your system. Navigate to the project root and set up a virtual environment:
 
 ```bash
@@ -67,6 +68,7 @@ source venv/bin/activate
 ```
 
 ### 2. Install Project Dependencies
+
 Install the required packages listed in `requirements.txt`:
 
 ```bash
@@ -74,6 +76,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Initialize Configurations
+
 A local `.env` configuration file has been created at the root level of the project. You can edit this file to configure the application (e.g. changing the chunk size or adjusting the similarity thresholds):
 
 ```ini
@@ -85,6 +88,7 @@ MATCH_THRESHOLD=0.3
 ```
 
 ### 4. Running the Tests
+
 Verify the pipeline and components are working correctly using Python's standard `unittest` library:
 
 ```bash
@@ -92,6 +96,7 @@ python -m unittest tests/test_pipeline.py
 ```
 
 ### 5. Running the Streamlit Web App
+
 Launch the Streamlit web dashboard:
 
 ```bash
